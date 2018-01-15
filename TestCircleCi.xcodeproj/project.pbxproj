@@ -16,6 +16,7 @@
 		C7832554200D0DA200F96023 /* TestCircleCiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7832553200D0DA200F96023 /* TestCircleCiTests.m */; };
 		C783255F200D0DA300F96023 /* TestCircleCiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C783255E200D0DA300F96023 /* TestCircleCiUITests.m */; };
 		C783256D200D0E3800F96023 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C783256C200D0E3800F96023 /* .gitignore */; };
+		C7832571200D0F7900F96023 /* config.yml in Resources */ = {isa = PBXBuildFile; fileRef = C7832570200D0F7900F96023 /* config.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C783255E200D0DA300F96023 /* TestCircleCiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCircleCiUITests.m; sourceTree = "<group>"; };
 		C7832560200D0DA300F96023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C783256C200D0E3800F96023 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C7832570200D0F7900F96023 /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		C783252E200D0DA200F96023 = {
 			isa = PBXGroup;
 			children = (
+				C783256F200D0F6900F96023 /* .circleci */,
 				C783256C200D0E3800F96023 /* .gitignore */,
 				C7832539200D0DA200F96023 /* TestCircleCi */,
 				C7832552200D0DA200F96023 /* TestCircleCiTests */,
@@ -133,6 +136,14 @@
 				C7832560200D0DA300F96023 /* Info.plist */,
 			);
 			path = TestCircleCiUITests;
+			sourceTree = "<group>";
+		};
+		C783256F200D0F6900F96023 /* .circleci */ = {
+			isa = PBXGroup;
+			children = (
+				C7832570200D0F7900F96023 /* config.yml */,
+			);
+			path = .circleci;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7832571200D0F7900F96023 /* config.yml in Resources */,
 				C783256D200D0E3800F96023 /* .gitignore in Resources */,
 				C7832547200D0DA200F96023 /* LaunchScreen.storyboard in Resources */,
 				C7832544200D0DA200F96023 /* Assets.xcassets in Resources */,
