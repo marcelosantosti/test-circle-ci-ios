@@ -17,6 +17,8 @@
 		C783255F200D0DA300F96023 /* TestCircleCiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C783255E200D0DA300F96023 /* TestCircleCiUITests.m */; };
 		C783256D200D0E3800F96023 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C783256C200D0E3800F96023 /* .gitignore */; };
 		C7832571200D0F7900F96023 /* config.yml in Resources */ = {isa = PBXBuildFile; fileRef = C7832570200D0F7900F96023 /* config.yml */; };
+		C78325EA200D20C900F96023 /* CircleCiTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78325E1200D1E6900F96023 /* CircleCiTestFramework.framework */; };
+		C78325EB200D20C900F96023 /* CircleCiTestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C78325E1200D1E6900F96023 /* CircleCiTestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,42 @@
 			remoteGlobalIDString = C7832536200D0DA200F96023;
 			remoteInfo = TestCircleCi;
 		};
+		C78325E0200D1E6900F96023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C78325C1200D1E6700F96023;
+			remoteInfo = CircleCiTestFramework;
+		};
+		C78325E2200D1E6900F96023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C78325CA200D1E6700F96023;
+			remoteInfo = CircleCiTestFrameworkTests;
+		};
+		C78325EC200D20C900F96023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C78325C0200D1E6700F96023;
+			remoteInfo = CircleCiTestFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C78325EE200D20CA00F96023 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C78325EB200D20C900F96023 /* CircleCiTestFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C7832537200D0DA200F96023 /* TestCircleCi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCircleCi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +92,7 @@
 		C7832560200D0DA300F96023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C783256C200D0E3800F96023 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C7832570200D0F7900F96023 /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.yml; sourceTree = "<group>"; };
+		C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CircleCiTestFramework.xcodeproj; path = CircleCiTestFramework/CircleCiTestFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78325EA200D20C900F96023 /* CircleCiTestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +124,14 @@
 		C783252E200D0DA200F96023 = {
 			isa = PBXGroup;
 			children = (
+				C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */,
 				C783256F200D0F6900F96023 /* .circleci */,
 				C783256C200D0E3800F96023 /* .gitignore */,
 				C7832539200D0DA200F96023 /* TestCircleCi */,
 				C7832552200D0DA200F96023 /* TestCircleCiTests */,
 				C783255D200D0DA300F96023 /* TestCircleCiUITests */,
 				C7832538200D0DA200F96023 /* Products */,
+				C78325E8200D207E00F96023 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +187,22 @@
 			path = .circleci;
 			sourceTree = "<group>";
 		};
+		C78325DC200D1E6700F96023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C78325E1200D1E6900F96023 /* CircleCiTestFramework.framework */,
+				C78325E3200D1E6900F96023 /* CircleCiTestFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C78325E8200D207E00F96023 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,10 +213,12 @@
 				C7832533200D0DA200F96023 /* Sources */,
 				C7832534200D0DA200F96023 /* Frameworks */,
 				C7832535200D0DA200F96023 /* Resources */,
+				C78325EE200D20CA00F96023 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C78325ED200D20C900F96023 /* PBXTargetDependency */,
 			);
 			name = TestCircleCi;
 			productName = TestCircleCi;
@@ -238,6 +297,12 @@
 			mainGroup = C783252E200D0DA200F96023;
 			productRefGroup = C7832538200D0DA200F96023 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C78325DC200D1E6700F96023 /* Products */;
+					ProjectRef = C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C7832536200D0DA200F96023 /* TestCircleCi */,
@@ -246,6 +311,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C78325E1200D1E6900F96023 /* CircleCiTestFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CircleCiTestFramework.framework;
+			remoteRef = C78325E0200D1E6900F96023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C78325E3200D1E6900F96023 /* CircleCiTestFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CircleCiTestFrameworkTests.xctest;
+			remoteRef = C78325E2200D1E6900F96023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C7832535200D0DA200F96023 /* Resources */ = {
@@ -315,6 +397,11 @@
 			isa = PBXTargetDependency;
 			target = C7832536200D0DA200F96023 /* TestCircleCi */;
 			targetProxy = C783255B200D0DA300F96023 /* PBXContainerItemProxy */;
+		};
+		C78325ED200D20C900F96023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleCiTestFramework;
+			targetProxy = C78325EC200D20C900F96023 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
