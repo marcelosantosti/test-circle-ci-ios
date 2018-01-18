@@ -57,6 +57,13 @@
 			remoteGlobalIDString = C78325C0200D1E6700F96023;
 			remoteInfo = CircleCiTestFramework;
 		};
+		C7BC689A2011123B00F37DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7832608200D490700F96023;
+			remoteInfo = ExportFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -192,6 +199,7 @@
 			children = (
 				C78325E1200D1E6900F96023 /* CircleCiTestFramework.framework */,
 				C78325E3200D1E6900F96023 /* CircleCiTestFrameworkTests.xctest */,
+				C7BC689B2011123B00F37DAD /* ExportFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -325,6 +333,13 @@
 			fileType = wrapper.cfbundle;
 			path = CircleCiTestFrameworkTests.xctest;
 			remoteRef = C78325E2200D1E6900F96023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C7BC689B2011123B00F37DAD /* ExportFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ExportFramework.framework;
+			remoteRef = C7BC689A2011123B00F37DAD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -534,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AHVWFXXQP;
 				INFOPLIST_FILE = TestCircleCi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = marcelosantosti.github.io.TestCircleCi;
@@ -547,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AHVWFXXQP;
 				INFOPLIST_FILE = TestCircleCi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = marcelosantosti.github.io.TestCircleCi;

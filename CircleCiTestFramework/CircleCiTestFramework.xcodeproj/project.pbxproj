@@ -38,7 +38,7 @@
 		C78325E5200D203200F96023 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		C78325FC200D48C100F96023 /* CircleCiTestFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CircleCiTestFramework copy-Info.plist"; path = "/Users/marcelosantos/ConnectedInteractive/TestProjects/iOS/TestCircleCi/TestCircleCi/CircleCiTestFramework/CircleCiTestFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		C7832608200D490700F96023 /* ExportFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExportFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7832609200D490800F96023 /* CircleCiTestFramework copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CircleCiTestFramework copy2-Info.plist"; path = "/Users/marcelosantos/ConnectedInteractive/TestProjects/iOS/TestCircleCi/TestCircleCi/CircleCiTestFramework/CircleCiTestFramework copy2-Info.plist"; sourceTree = "<absolute>"; };
+		C7832609200D490800F96023 /* CircleCiTestFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CircleCiTestFramework-Info.plist"; path = "/Users/marcelosantos/ConnectedInteractive/TestProjects/iOS/TestCircleCi/TestCircleCi/CircleCiTestFramework/CircleCiTestFramework-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 				C78325CE200D1E6700F96023 /* CircleCiTestFrameworkTests */,
 				C78325C2200D1E6700F96023 /* Products */,
 				C78325FC200D48C100F96023 /* CircleCiTestFramework copy-Info.plist */,
-				C7832609200D490800F96023 /* CircleCiTestFramework copy2-Info.plist */,
+				C7832609200D490800F96023 /* CircleCiTestFramework-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -485,7 +485,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "CircleCiTestFramework copy2-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CircleCiTestFramework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = marcelosantosti.github.io.CircleCiTestFramework;
@@ -504,7 +504,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "CircleCiTestFramework copy2-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CircleCiTestFramework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = marcelosantosti.github.io.CircleCiTestFramework;

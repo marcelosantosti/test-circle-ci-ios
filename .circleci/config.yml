@@ -32,6 +32,9 @@ jobs:
             SCAN_DEVICE: iPhone 6
             SCAN_SCHEME: CircleCiTestFramework
       - run:
+          name: Update Version
+          command: chmod 777 update_bundle_identifier.sh && ./update_bundle_identifier.sh
+      - run:
           name: Generate Library
           command: fastlane generate_framework
       - run:
