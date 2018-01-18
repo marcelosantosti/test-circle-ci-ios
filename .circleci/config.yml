@@ -36,7 +36,7 @@ jobs:
           command: fastlane generate_framework
       - run:
           name: Zip Library
-          command: zip -r library.zip CircleCiTestFramework/CircleCiTestFramework.framework
+          command: cd CircleCiTestFramework && zip -r library.zip CircleCiTestFramework.framework
 
       # Collect XML test results data to show in the UI,
       # and save the same XML files under test-results folder
@@ -51,5 +51,5 @@ jobs:
           destination: scan-logs
       - store_artifacts:
           path: library.zip
-          destination: CircleCiTestFramework
+          destination: CircleCiTestFramework.zip
 
