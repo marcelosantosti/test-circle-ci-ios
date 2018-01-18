@@ -41,6 +41,9 @@ jobs:
           name: Zip Library
           command: cd CircleCiTestFramework && zip -r library.zip CircleCiTestFramework.framework
       - run:
+          name: Download AWS CLI
+          command: apt-get update && apt-get install -y awscli
+      - run:
           name: Upload to S3
           command: chmod 777 upload_to_s3.sh && ./upload_to_s3.sh
 
