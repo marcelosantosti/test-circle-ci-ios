@@ -12,6 +12,9 @@
 		C78325D2200D1E6700F96023 /* CircleCiTestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C78325C4200D1E6700F96023 /* CircleCiTestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C78325E6200D203200F96023 /* TestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = C78325E4200D203200F96023 /* TestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C78325E7200D203200F96023 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C78325E5200D203200F96023 /* TestClass.m */; };
+		C78325FF200D490700F96023 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C78325E5200D203200F96023 /* TestClass.m */; };
+		C7832602200D490700F96023 /* CircleCiTestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C78325C4200D1E6700F96023 /* CircleCiTestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7832603200D490700F96023 /* TestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = C78325E4200D203200F96023 /* TestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		C78325D1200D1E6700F96023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C78325E4200D203200F96023 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		C78325E5200D203200F96023 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		C78325FC200D48C100F96023 /* CircleCiTestFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CircleCiTestFramework copy-Info.plist"; path = "/Users/marcelosantos/ConnectedInteractive/TestProjects/iOS/TestCircleCi/TestCircleCi/CircleCiTestFramework/CircleCiTestFramework copy-Info.plist"; sourceTree = "<absolute>"; };
+		C7832608200D490700F96023 /* ExportFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExportFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7832609200D490800F96023 /* CircleCiTestFramework copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CircleCiTestFramework copy2-Info.plist"; path = "/Users/marcelosantos/ConnectedInteractive/TestProjects/iOS/TestCircleCi/TestCircleCi/CircleCiTestFramework/CircleCiTestFramework copy2-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7832600200D490700F96023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +73,8 @@
 				C78325C3200D1E6700F96023 /* CircleCiTestFramework */,
 				C78325CE200D1E6700F96023 /* CircleCiTestFrameworkTests */,
 				C78325C2200D1E6700F96023 /* Products */,
+				C78325FC200D48C100F96023 /* CircleCiTestFramework copy-Info.plist */,
+				C7832609200D490800F96023 /* CircleCiTestFramework copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +83,7 @@
 			children = (
 				C78325C1200D1E6700F96023 /* CircleCiTestFramework.framework */,
 				C78325CA200D1E6700F96023 /* CircleCiTestFrameworkTests.xctest */,
+				C7832608200D490700F96023 /* ExportFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +117,15 @@
 			files = (
 				C78325D2200D1E6700F96023 /* CircleCiTestFramework.h in Headers */,
 				C78325E6200D203200F96023 /* TestClass.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7832601200D490700F96023 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7832602200D490700F96023 /* CircleCiTestFramework.h in Headers */,
+				C7832603200D490700F96023 /* TestClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +168,25 @@
 			productReference = C78325CA200D1E6700F96023 /* CircleCiTestFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C78325FD200D490700F96023 /* ExportFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7832605200D490700F96023 /* Build configuration list for PBXNativeTarget "ExportFramework" */;
+			buildPhases = (
+				C78325FE200D490700F96023 /* Sources */,
+				C7832600200D490700F96023 /* Frameworks */,
+				C7832601200D490700F96023 /* Headers */,
+				C7832604200D490700F96023 /* Resources */,
+				C783260A200D49C400F96023 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExportFramework;
+			productName = CircleCiTestFramework;
+			productReference = C7832608200D490700F96023 /* ExportFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,6 +202,9 @@
 					};
 					C78325C9200D1E6700F96023 = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C78325FD200D490700F96023 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -176,6 +223,7 @@
 			targets = (
 				C78325C0200D1E6700F96023 /* CircleCiTestFramework */,
 				C78325C9200D1E6700F96023 /* CircleCiTestFrameworkTests */,
+				C78325FD200D490700F96023 /* ExportFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -195,7 +243,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7832604200D490700F96023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C783260A200D49C400F96023 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C78325BC200D1E6700F96023 /* Sources */ = {
@@ -211,6 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C78325D0200D1E6700F96023 /* CircleCiTestFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C78325FE200D490700F96023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C78325FF200D490700F96023 /* TestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +476,44 @@
 			};
 			name = Release;
 		};
+		C7832606200D490700F96023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "CircleCiTestFramework copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marcelosantosti.github.io.CircleCiTestFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7832607200D490700F96023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "CircleCiTestFramework copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marcelosantosti.github.io.CircleCiTestFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +540,15 @@
 			buildConfigurations = (
 				C78325D9200D1E6700F96023 /* Debug */,
 				C78325DA200D1E6700F96023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7832605200D490700F96023 /* Build configuration list for PBXNativeTarget "ExportFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7832606200D490700F96023 /* Debug */,
+				C7832607200D490700F96023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

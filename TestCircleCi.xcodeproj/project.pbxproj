@@ -124,8 +124,8 @@
 		C783252E200D0DA200F96023 = {
 			isa = PBXGroup;
 			children = (
-				C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */,
 				C783256F200D0F6900F96023 /* .circleci */,
+				C78325DB200D1E6700F96023 /* CircleCiTestFramework.xcodeproj */,
 				C783256C200D0E3800F96023 /* .gitignore */,
 				C7832539200D0DA200F96023 /* TestCircleCi */,
 				C7832552200D0DA200F96023 /* TestCircleCiTests */,

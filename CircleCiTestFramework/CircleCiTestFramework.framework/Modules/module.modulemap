@@ -1,0 +1,6 @@
+framework module CircleCiTestFramework {
+  umbrella header "CircleCiTestFramework.h"
+
+  export *
+  module * { export * }
+}
