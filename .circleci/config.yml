@@ -50,6 +50,6 @@ jobs:
           path: ~/Library/Logs/scan
           destination: scan-logs
       - store_artifacts:
-          path: CircleCiTestFramework/CircleCiTestFramework.framework
+          path: CircleCiTestFramework/library.zip
           destination: CircleCiTestFramework
 
